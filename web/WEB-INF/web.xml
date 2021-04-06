@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+    <listener>
+        <listener-class>com.tmall.listener.OnlineCounterListener</listener-class>
+    </listener>
+
+	<servlet>
+        <servlet-name>ForeServlet</servlet-name>
+        <servlet-class>com.tmall.servlet.ForeServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ForeServlet</servlet-name>
+        <url-pattern>/foreServlet</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>com.tmall.servlet.OrderServlet</servlet-class>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/orderServlet</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.tmall.servlet.UserServlet</servlet-class>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/userServlet</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>ProductImageServlet</servlet-name>
+        <servlet-class>com.tmall.servlet.ProductImageServlet</servlet-class>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>ProductImageServlet</servlet-name>
+        <url-pattern>/productImageServlet</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+	    <servlet-name>CategoryServlet</servlet-name>
+	    <servlet-class>com.tmall.servlet.CategoryServlet</servlet-class>
+	</servlet>
+ 
+ 	<servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>com.tmall.servlet.ProductServlet</servlet-class>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/productServlet</url-pattern>
+    </servlet-mapping>
+ 
+	<servlet-mapping>
+	    <servlet-name>CategoryServlet</servlet-name>
+	    <url-pattern>/categoryServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+        <servlet-name>PropertyServlet</servlet-name>
+        <servlet-class>com.tmall.servlet.PropertyServlet</servlet-class>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>PropertyServlet</servlet-name>
+        <url-pattern>/propertyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Log4jInit</servlet-name>
+        <servlet-class>com.tchzt.logTest.Log4jInit</servlet-class>
+        <init-param>
+            <param-name>log4j</param-name>//这个是名字是下边路径配置的标识（好像KEY一样）
+            <param-value>/WEB-INF/classes/log4j.properties</param-value>//这是容器初始化时候加载log4j配置文件的路径（这好像一个value）;
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Test</servlet-name>
+        <servlet-class>com.tmall.servlet.ServletTest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Test</servlet-name>
+        <url-pattern>/servlet/ServletTest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UploadHandleServlet</servlet-name>
+        <servlet-class>com.tmall.servlet.UploadHandleServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadHandleServlet</servlet-name>
+        <url-pattern>/servlet/UploadHandleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListFileServlet</servlet-name>
+        <servlet-class>com.tmall.servlet.ListFileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ListFileServlet</servlet-name>
+        <url-pattern>/servlet/ListFileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DownLoadServlet</servlet-name>
+        <servlet-class>com.tmall.servlet.DownLoadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DownLoadServlet</servlet-name>
+        <url-pattern>/servlet/DownLoadServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+	
+	
+	<filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.tmall.filter.EncodingFilter</filter-class>
+    </filter>
+ 
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>  
+ 
+	<filter>
+	    <filter-name>BackServletFilter</filter-name>
+	    <filter-class>com.tmall.filter.BackServletFilter</filter-class>
+	</filter>
+	 
+	<filter-mapping>
+	    <filter-name>BackServletFilter</filter-name>
+	    <url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+        <filter-name>ForeAuthFilter</filter-name>
+        <filter-class>com.tmall.filter.ForeAuthFilter</filter-class>
+    </filter>
+ 
+    <filter-mapping>
+        <filter-name>ForeAuthFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>  
+    
+    <filter>
+        <filter-name>ForeServletFilter</filter-name>
+        <filter-class>com.tmall.filter.ForeServletFilter</filter-class>
+    </filter>
+ 
+    <filter-mapping>
+        <filter-name>ForeServletFilter</filter-name>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>REQUEST</dispatcher>        
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+ 
+</web-app>
