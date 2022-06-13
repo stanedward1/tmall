@@ -40,17 +40,17 @@
 
 ## 数据模型
 
-![image-20200616222636323](imgs/image-20200616222636323.png)
+![image-20200616222636323](../imgs/image-20200616222636323.png)
 
-![image-20200616224850186](imgs/image-20200616224850186.png)
+![image-20200616224850186](../imgs/image-20200616224850186.png)
 
 ## 登录(5分)
 
-![image-20210407115322261](imgs/image-20210407115322261.png)
+![image-20210407115322261](../imgs/image-20210407115322261.png)
 
 ## 注册5分
 
-![image-20210407115356354](imgs/image-20210407115356354.png)
+![image-20210407115356354](../imgs/image-20210407115356354.png)
 
 ### 以用户为例
 
@@ -717,9 +717,9 @@ public class ForeServlet extends BaseBackServlet{
 
 ### 运行效果
 
-![image-20200616221716393](imgs/image-20200616221716393.png)
+![image-20200616221716393](../imgs/image-20200616221716393.png)
 
-![image-20210407120004218](imgs/image-20210407120004218.png)
+![image-20210407120004218](../imgs/image-20210407120004218.png)
 
 ## 增加功能5分
 
@@ -1023,7 +1023,7 @@ public class CategoryServlet extends BaseBackServlet {
 
 ### 运行效果
 
-![image-20200616223033070](imgs/image-20200616223033070.png)
+![image-20200616223033070](../imgs/image-20200616223033070.png)
 
 ## 删除功能5分
 
@@ -1490,17 +1490,17 @@ public class ProductServlet extends BaseBackServlet {
 
 ### 运行效果
 
-![image-20200616223910426](imgs/image-20200616223910426.png)
+![image-20200616223910426](../imgs/image-20200616223910426.png)
 
-![image-20200616223923708](imgs/image-20200616223923708.png)
+![image-20200616223923708](../imgs/image-20200616223923708.png)
 
-![image-20200616223941677](imgs/image-20200616223941677.png)
+![image-20200616223941677](../imgs/image-20200616223941677.png)
 
-![image-20200616224002791](imgs/image-20200616224002791.png)
+![image-20200616224002791](../imgs/image-20200616224002791.png)
 
-![image-20200616224018289](imgs/image-20200616224018289.png)
+![image-20200616224018289](../imgs/image-20200616224018289.png)
 
-![image-20200616224028657](imgs/image-20200616224028657.png)
+![image-20200616224028657](../imgs/image-20200616224028657.png)
 
 
 
@@ -1538,7 +1538,7 @@ public class ProductServlet extends BaseBackServlet {
     }
 ```
 
-![image-20200617200930725](imgs/image-20200617200930725.png)
+![image-20200617200930725](../imgs/image-20200617200930725.png)
 
 在jsp页面显示
 
@@ -1563,7 +1563,7 @@ public class ProductServlet extends BaseBackServlet {
 
 ## mysql数据库5分
 
-![image-20200616224304983](imgs/image-20200616224304983.png)
+![image-20200616224304983](../imgs/image-20200616224304983.png)
 
 ## MVC模式5分
 
@@ -1573,7 +1573,7 @@ public class ProductServlet extends BaseBackServlet {
 页面就是 **视图** ( jsp )
 控制不同的模型显示在不同的视图上，这件事，就是由控制器来完成 ( servlet )
 
-![image-20200616225036725](imgs/image-20200616225036725.png)
+![image-20200616225036725](../imgs/image-20200616225036725.png)
 
 ## DBUtils使用10分
 
@@ -1667,7 +1667,7 @@ public class DBUtil {
 
 JSTL 是JSP的标准标签库，是一个JSP的标签集合 ，按照类别包括核心标签，格式化标签，JSTL函数，SQL标签和XML标签 ，其中前三个用的概率较高。要想使用JSTL标签库我们首先要做的就是引入对应的Jar包【standard.jar和jstl.jar】。有时候我们在jsp页面上面要嵌套大量的Java代码，但是又要在页面上进行源码的编写，复杂且难以维护，所以我们就可以利用我们的JSTL标签库进行解决这个问题。
 EL是JSP的表达式语言，EL表达式使我们在访问JavaBean中的数据非常简单，EL 表达式语法为【${expr}】，在jsp页面中，常用于获取后台传递的数据。通常情况下，我们将JSTL标签库与EL表达式进行结合使用，能很方便的进行数据的展示。
-![image-20200617133251993](imgs/image-20200617133251993.png)
+![image-20200617133251993](../imgs/image-20200617133251993.png)
 
 ### 代码
 
@@ -1831,7 +1831,7 @@ public class OnlineCounterListener implements HttpSessionListener {
 
 **运行效果**
 
-![image-20200617135421138](imgs/image-20200617135421138.png)
+![image-20200617135421138](../imgs/image-20200617135421138.png)
 
 ## 上传下载10分
 
@@ -2165,10 +2165,10 @@ public class DownLoadServlet extends HttpServlet {
 
 ![image-20200617194846275](imgs/image-20200617194846275.png)
 
-![image-20200617194900116](imgs/image-20200617194900116.png)
+![image-20200617194900116](../imgs/image-20200617194900116.png)
 
 ![image-20200617173003821](imgs/image-20200617173003821.png)
 
-![image-20200617195143527](imgs/image-20200617195143527.png)
+![image-20200617195143527](../imgs/image-20200617195143527.png)
 
 
